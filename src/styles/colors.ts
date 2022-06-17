@@ -288,6 +288,8 @@ const getColorsByTheme = (darkMode?: boolean) => {
     whiteTransparent: buildRgba(base.white, 0.8), // '255, 255, 255'
   };
 
+  const statusColor = buildRgba(base.blueGreyDark, 0.7);
+
   if (darkMode) {
     base = {
       ...base,
@@ -373,6 +375,7 @@ const getColorsByTheme = (darkMode?: boolean) => {
     listHeaders,
     networkColors,
     sendScreen,
+    statusColor,
     ...base,
     ...transparent,
     ...light,
