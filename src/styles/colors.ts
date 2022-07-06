@@ -288,9 +288,6 @@ const getColorsByTheme = (darkMode?: boolean) => {
     whiteTransparent: buildRgba(base.white, 0.8), // '255, 255, 255'
   };
 
-  const statusColor = buildRgba(base.blueGreyDark, 0.7);
-  const balanceText = buildRgba(base.blueGreyDark, 0.5);
-
   if (darkMode) {
     base = {
       ...base,
@@ -367,7 +364,6 @@ const getColorsByTheme = (darkMode?: boolean) => {
     assetIcon,
     avatarBackgrounds,
     avatarColor,
-    balanceText,
     brighten,
     getFallbackTextColor,
     getTextColorForBackground,
@@ -377,7 +373,6 @@ const getColorsByTheme = (darkMode?: boolean) => {
     listHeaders,
     networkColors,
     sendScreen,
-    statusColor,
     ...base,
     ...transparent,
     ...light,
