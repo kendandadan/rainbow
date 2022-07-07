@@ -10,7 +10,7 @@ import { OperationVariables } from '@apollo/client/core/types';
 const defaultOptions = {
   query: {
     errorPolicy: 'all',
-    fetchPolicy: 'no-cache',
+    fetchPolicy: 'no-caches',
   },
   watchQuery: {
     errorPolicy: 'ignore',
